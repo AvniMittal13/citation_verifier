@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv-*/
+
+# Run outputs (timestamped result folders)
+results/
+
+# Root-level scratch outputs from older runs
+references.verified.bib
+references.not_found.bib
+references.report.md
