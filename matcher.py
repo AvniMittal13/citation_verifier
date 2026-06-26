@@ -59,6 +59,24 @@ def diff_fields(original: dict, scholar: dict) -> list:
     return changed
 
 
+def _first_author_surname(author_field: str) -> str:
+    if not author_field:
+        return ""
+    first = author_field.split(" and ")[0].strip()
+    if "," in first:
+        return first.split(",")[0].strip()
+    return first.split(" ")[-1].strip()
+
+
+def _author_corroborated(original: dict, scholar: dict) -> bool:
+    """True if the user's first-author surname appears in the candidate entry."""
+    surname = _normalize(_first_author_surname(original.get("author", "")))
+    if not surname:
+        return True  # nothing to check against
+    hay = _normalize(scholar.get("author", "")) + " " + _normalize(str(scholar))
+    return surname in hay
+
+
 def decide(original: dict, scholar: dict, use_llm: bool = True) -> MatchDecision:
     sim = title_similarity(original, scholar)
     changed = diff_fields(original, scholar)
@@ -69,17 +87,26 @@ def decide(original: dict, scholar: dict, use_llm: bool = True) -> MatchDecision
     elif sim < BORDERLINE_LOW:
         same, method, reason = False, "deterministic", f"title similarity {sim:.2f}"
     else:
-        # Borderline: ask the LLM if allowed/available.
-        verdict = copilot_llm.compare_entries(original, scholar) if use_llm else None
-        if verdict is not None:
-            same = verdict.same_paper
-            method = "llm"
-            reason = f"llm conf={verdict.confidence:.2f}: {verdict.reason}"
+        # Borderline band: require the first-author surname to be corroborated,
+        # otherwise reject outright. This prevents accepting a *different* paper
+        # that merely has a similar title (e.g. when a rate-limited lookup falls
+        # back to a weak cross-source match).
+        if not _author_corroborated(original, scholar):
+            same, method = False, "deterministic"
+            reason = (f"borderline sim {sim:.2f} and first author "
+                      f"'{_first_author_surname(original.get('author',''))}' "
+                      f"not corroborated -> rejected")
         else:
-            # Fall back to a lenient threshold midpoint.
-            same = sim >= 0.7
-            method = "deterministic" if not use_llm else "llm+fallback"
-            reason = f"fallback on title similarity {sim:.2f}"
+            verdict = (copilot_llm.compare_entries(original, scholar)
+                       if use_llm else None)
+            if verdict is not None:
+                same = verdict.same_paper
+                method = "llm"
+                reason = f"llm conf={verdict.confidence:.2f}: {verdict.reason}"
+            else:
+                same = sim >= 0.7
+                method = "deterministic" if not use_llm else "llm+fallback"
+                reason = f"fallback on title similarity {sim:.2f} (author ok)"
 
     return MatchDecision(
         same_paper=same,

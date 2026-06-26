@@ -1,314 +1,507 @@
-@inproceedings{liu2024interintentinvestigatingsocialintelligence,
-  title={Interintent: Investigating social intelligence of llms via intention understanding in an interactive game context},
-  author={Liu, Ziyi and Anand, Abhishek and Zhou, Pei and Huang, Jen-tse and Zhao, Jieyu},
-  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
-  pages={6718--6746},
-  year={2024}
+
+% ─────────────────────────────────────────────
+% 1. MoE FOUNDATIONS
+% ─────────────────────────────────────────────
+
+@inproceedings{shazeer2017outrageously,
+  title         = {Outrageously Large Neural Networks: The Sparsely-Gated
+                   Mixture-of-Experts Layer},
+  author        = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof
+                   and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
+  booktitle     = {International Conference on Learning Representations},
+  year          = {2017},
+  eprint        = {1701.06538},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1701.06538}
 }
 
-@article{bailis2024werewolfarenacasestudy,
-  title={Werewolf arena: A case study in llm evaluation via social deduction},
-  author={Bailis, Suma and Friedhoff, Jane and Chen, Feiyang},
-  journal={arXiv preprint arXiv:2407.13943},
-  year={2024}
+@article{fedus2022switch,
+  title         = {Switch Transformers: Scaling to Trillion Parameter Models
+                   with Simple and Efficient Sparsity},
+  author        = {Fedus, William and Zoph, Barret and Shazeer, Noam},
+  journal       = {Journal of Machine Learning Research},
+  volume        = {23},
+  number        = {120},
+  pages         = {1--39},
+  year          = {2022},
+  eprint        = {2101.03961},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2101.03961}
 }
 
-
-@article{curvo2025traitorsdeceptiontrustmultiagent,
-  title={The traitors: Deception and trust in multi-agent language model simulations},
-  author={Curvo, Pedro MP},
-  journal={arXiv preprint arXiv:2505.12923},
-  year={2025}
+@article{jiang2024mixtral,
+  title         = {Mixtral of Experts},
+  author        = {Jiang, Albert Q. and Sablayrolles, Alexandre and Roux, Antoine
+                   and Mensch, Arthur and Savary, Blanche and Bamford, Chris
+                   and Chaplot, Devendra Singh and de las Casas, Diego and
+                   Bou Hanna, Emma and Bressand, Florian and others},
+  journal       = {arXiv preprint arXiv:2401.04088},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2401.04088},
+  eprint        = {2401.04088},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.04088}
 }
 
-
-@article{light2023avalonbenchevaluatingllmsplaying,
-  title={Avalonbench: Evaluating llms playing the game of avalon},
-  author={Light, Jonathan and Cai, Min and Shen, Sheng and Hu, Ziniu},
-  journal={arXiv preprint arXiv:2310.05036},
-  year={2023}
+@inproceedings{lepikhin2021gshard,
+  title         = {{GShard}: Scaling Giant Models with Conditional Computation
+                   and Automatic Sharding},
+  author        = {Lepikhin, Dmitry and Lee, HyoukJoong and Xu, Yuanzhong and
+                   Chen, Dehao and Firat, Orhan and Huang, Yanping and
+                   Krikun, Maxim and Shazeer, Noam and Chen, Zhifeng},
+  booktitle     = {9th International Conference on Learning Representations,
+                   {ICLR} 2021},
+  year          = {2021},
+  eprint        = {2006.16668},
+  archivePrefix = {arXiv},
+  url           = {https://openreview.net/forum?id=qrwe7XHTmYb}
 }
 
-
-@article{chi2024amongagentsevaluatinglargelanguage,
-  title={Amongagents: Evaluating large language models in the interactive text-based social deduction game},
-  author={Chi, Yizhou and Mao, Lingjun and Tang, Zineng},
-  journal={arXiv preprint arXiv:2407.16521},
-  year={2024}
+@article{muennighoff2024olmoe,
+  title         = {{OLMoE}: Open Mixture-of-Experts Language Models},
+  author        = {Muennighoff, Niklas and Soldaini, Luca and Groeneveld, Dirk
+                   and Lo, Kyle and Morrison, Jacob and Min, Sewon and
+                   Shi, Weijia and Walsh, Pete and Tafjord, Oyvind and
+                   Lambert, Nathan and Gu, Yuling and Arora, Shane and
+                   Bhagia, Akshita and Schwenk, Dustin and Wadden, David
+                   and Wettig, Alexander and Hui, Binyuan and Dettmers, Tim
+                   and Kiela, Douwe and Farhadi, Ali and Smith, Noah A.
+                   and Koh, Pang Wei and Singh, Amanpreet and Hajishirzi, Hannaneh},
+  journal       = {arXiv preprint arXiv:2409.02060},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2409.02060},
+  eprint        = {2409.02060},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2409.02060}
 }
 
-@article{Hagendorff_2024,
-  title={Deception abilities emerged in large language models},
-  author={Hagendorff, Thilo},
-  journal={Proceedings of the National Academy of Sciences},
-  volume={121},
-  number={24},
-  pages={e2317967121},
-  year={2024},
-  publisher={National Academy of Sciences}
+@article{yang2025qwen3,
+  title         = {{Qwen3} Technical Report},
+  author        = {Yang, An and Li, Anfeng and Yang, Baosong and Zhang, Beichen
+                   and Hui, Binyuan and Zheng, Bo and Yu, Bowen and Gao, Chang
+                   and Huang, Chengen and Lv, Chenxu and others},
+  journal       = {arXiv preprint arXiv:2505.09388},
+  year          = {2025},
+  eprint        = {2505.09388},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2505.09388}
 }
 
-
-@article{ren2025maskbenchmarkdisentanglinghonesty,
-  title={The mask benchmark: Disentangling honesty from accuracy in ai systems},
-  author={Ren, Richard and Agarwal, Arunim and Mazeika, Mantas and Menghini, Cristina and Vacareanu, Robert and Kenstler, Brad and Yang, Mick and Barrass, Isabelle and Gatti, Alice and Yin, Xuwang and others},
-  journal={arXiv preprint arXiv:2503.03750},
-  year={2025}
+@article{deepseekai2024v3,
+  title         = {{DeepSeek-V3} Technical Report},
+  author        = {{DeepSeek-AI} and Liu, Aixin and Feng, Bei and Xue, Bing and
+                   Wang, Bingxuan and Wu, Bochao and Lu, Chengda and
+                   Zhao, Chenggang and Deng, Chengqi and Zhang, Chenyu and
+                   Ruan, Chong and Dai, Damai and Guo, Daya and Yang, Dejian
+                   and Chen, Deli and Ji, Dongjie and Li, Erhang and others},
+  journal       = {arXiv preprint arXiv:2412.19437},
+  year          = {2024},
+  eprint        = {2412.19437},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2412.19437}
 }
 
-
-@article{xu2024languageagentsrl,
-  title={Language agents with reinforcement learning for strategic play in the werewolf game},
-  author={Xu, Zelai and Yu, Chao and Fang, Fei and Wang, Yu and Wu, Yi},
-  journal={arXiv preprint arXiv:2310.18940},
-  year={2023}
-}
-
-
-@article{wu2024enhancereasoningwerewolf,
-  title={Enhance reasoning for large language models in the game werewolf},
-  author={Wu, Shuang and Zhu, Liwen and Yang, Tao and Xu, Shiwei and Fu, Qiang and Wei, Yang and Fu, Haobo},
-  journal={arXiv preprint arXiv:2402.02330},
-  year={2024}
-}
-
-% ////
-
-@article{xu2025lspowerewolf,
-  title={Learning strategic language agents in the werewolf game with iterative latent space policy optimization},
-  author={Xu, Zelai and Gu, Wanjun and Yu, Chao and Wu, Yi and Wang, Yu},
-  journal={arXiv preprint arXiv:2502.04686},
-  year={2025}
-}
-
-@article{ogara2023hoodwinked,
-  title = {Hoodwinked: Deception and Cooperation in a Text-Based Game for Language Models},
-  author = {O'Gara, Aidan},
-  journal = {arXiv preprint arXiv:2308.01404},
-  year = {2023}
-}
-
-@article{lan2024spygame,
-  title = {Microscopic Analysis on {LLM} Players via Social Deduction Game},
-  author = {Lan, Byungjun and others},
-  journal = {arXiv preprint arXiv:2408.09946},
-  year = {2024}
-}
-
-@article{meta2022cicero,
-  title = {Human-Level Play in the Game of {D}iplomacy by Combining Language Models with Strategic Reasoning},
-  author = {{Meta Fundamental AI Research Diplomacy Team (FAIR)} and Bakhtin, Anton and Brown, Noam and others},
-  journal = {Science},
-  volume = {378},
-  number = {6624},
-  pages = {1067--1074},
-  year = {2022},
-  doi = {10.1126/science.ade9097}
-}
-
-@inproceedings{kim2023fantom,
-  title = {{FANToM}: A Benchmark for Stress-testing Machine Theory of Mind in Interactions},
-  author = {Kim, Hyunwoo and Sclar, Melanie and Zhou, Xuhui and Bras, Ronan Le and Kim, Gunhee and Choi, Yejin and Sap, Maarten},
-  booktitle = {Proceedings of EMNLP},
-  year = {2023}
-}
-
-@inproceedings{xu2024opentom,
-  title = {{OpenToM}: A Comprehensive Benchmark for Evaluating Theory-of-Mind Reasoning Capabilities of Large Language Models},
-  author = {Xu, Hainiu and Zhao, Runcong and Zhu, Lixing and Du, Jinhua and He, Yulan},
-  booktitle = {Proceedings of ACL},
-  year = {2024}
-}
-
-@inproceedings{wu2023hitom,
-  title = {Hi-{ToM}: A Benchmark for Evaluating Higher-Order Theory of Mind Reasoning in Large Language Models},
-  author = {Wu, Yufan and He, Yinghui and Jia, Yilin and Mihalcea, Rada and Chen, Yulong and Deng, Naihao},
-  booktitle = {Findings of EMNLP},
-  year = {2023}
-}
-
-@article{strachan2024testingtom,
-  title = {Testing Theory of Mind in Large Language Models and Humans},
-  author = {Strachan, James W. A. and others},
-  journal = {Nature Human Behaviour},
-  volume = {8},
-  pages = {1285--1295},
-  year = {2024},
-  doi = {10.1038/s41562-024-01882-z}
-}
-
-@inproceedings{pan2023machiavelli,
-  title = {Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the {MACHIAVELLI} Benchmark},
-  author = {Pan, Alexander and Chan, Jun Shern and Zou, Andy and Li, Nathaniel and Basart, Steven and Woodside, Thomas and Ng, Jonathan and Zhang, Hanlin and Emmons, Scott and Hendrycks, Dan},
-  booktitle = {Proceedings of the 40th International Conference on Machine Learning ({ICML})},
-  year = {2023}
-}
-
-@article{hubinger2024sleeperagents,
-  title = {Sleeper Agents: Training Deceptive {LLM}s That Persist Through Safety Training},
-  author = {Hubinger, Evan and Denison, Carson and Mu, Jesse and others},
-  journal = {arXiv preprint arXiv:2401.05566},
-  year = {2024}
-}
-
-@inproceedings{piatti2024govsim,
-  title = {Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of {LLM} Agents},
-  author = {Piatti, Giorgio and Jin, Zhijing and Kleiman-Weiner, Max and Sch{\"o}lkopf, Bernhard and Sachan, Mrinmaya and Mihalcea, Rada},
-  booktitle = {Advances in Neural Information Processing Systems ({N}eur{IPS})},
-  year = {2024}
-}
-
-@inproceedings{shinn2023reflexion,
-  title = {Reflexion: Language Agents with Verbal Reinforcement Learning},
-  author = {Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
-  booktitle = {Advances in Neural Information Processing Systems ({N}eur{IPS})},
-  year = {2023}
-}
-
-@inproceedings{park2023generativeagents,
-  title = {Generative Agents: Interactive Simulacra of Human Behavior},
-  author = {Park, Joon Sung and O'Brien, Joseph C. and Cai, Carrie J. and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.},
-  booktitle = {Proceedings of UIST},
-  year = {2023}
-}
-
-@article{wang2023voyager,
-  title = {Voyager: An Open-Ended Embodied Agent with Large Language Models},
-  author = {Wang, Guanzhi and Xie, Yuqi and Jiang, Yunfan and Mandlekar, Ajay and Xiao, Chaowei and Zhu, Yuke and Fan, Linxi and Anandkumar, Anima},
-  journal = {Transactions on Machine Learning Research},
-  year = {2024}
+@inproceedings{dai2024deepseekmoe,
+  title         = {{DeepSeekMoE}: Towards Ultimate Expert Specialization in
+                   Mixture-of-Experts Language Models},
+  author        = {Dai, Damai and Deng, Chengqi and Zhao, Chenggang and Xu, R. X.
+                   and Gao, Huazuo and Chen, Deli and Li, Jiashi and Zeng, Wangding
+                   and Yu, Xingkai and Wu, Yu and Xie, Zhenda and Li, Y. K.
+                   and Huang, Panpan and Zhao, Fuli and Sun, Yingfei and
+                   Ma, Shirong and Liang, Yongqiang and others},
+  booktitle     = {Proceedings of the 62nd Annual Meeting of the Association
+                   for Computational Linguistics (ACL)},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2401.06066},
+  eprint        = {2401.06066},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.06066}
 }
 
 
-@article{xu2023exploring,
-  title={Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf},
-  author={Xu, Yuzhuang and Wang, Shuo and Li, Peng and Luo, Fuwen and Wang, Xiaolong and Liu, Weidong and Liu, Yang},
-  journal={arXiv preprint arXiv:2309.04658},
-  year={2023}
+% ─────────────────────────────────────────────
+% 2. SPECULATIVE EXECUTION
+% ─────────────────────────────────────────────
+
+@inproceedings{leviathan2023fast,
+  title         = {Fast Inference from Transformers via Speculative Decoding},
+  author        = {Leviathan, Yaniv and Kalman, Matan and Matias, Yossi},
+  booktitle     = {Proceedings of the 40th International Conference on Machine
+                   Learning},
+  pages         = {19274--19286},
+  year          = {2023},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {202},
+  publisher     = {PMLR},
+  doi           = {10.48550/arXiv.2211.17192},
+  eprint        = {2211.17192},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2211.17192}
 }
 
-@inproceedings{xu2024language,
-  title={Language Agents with Reinforcement Learning for Strategic Play in the Werewolf Game},
-  author={Xu, Zelai and Yu, Chao and Fang, Fei and Wang, Yu and Wu, Yi},
-  booktitle={Proceedings of the 41st International Conference on Machine Learning (ICML)},
-  year={2024}
+@article{chen2023speculative,
+  title         = {Accelerating Large Language Model Decoding with Speculative
+                   Sampling},
+  author        = {Chen, Charlie and Borgeaud, Sebastian and Irving, Geoffrey
+                   and Lespiau, Jean-Baptiste and Sifre, Laurent and Jumper, John},
+  journal       = {arXiv preprint arXiv:2302.01318},
+  year          = {2023},
+  doi           = {10.48550/arXiv.2302.01318},
+  eprint        = {2302.01318},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2302.01318}
 }
 
-@inproceedings{wang2024boosting,
-  title={Boosting LLM Agents with Recursive Contemplation for Effective Deception Handling},
-  author={Wang, Shenzhi and Liu, Chang and Zheng, Zilong and Qi, Siyuan and Chen, Shuo and Yang, Qisen and Zhao, Andrew and Wang, Chaofei and Song, Shiji and Huang, Gao},
-  booktitle={Findings of the Association for Computational Linguistics: ACL 2024},
-  pages={9909--9953},
-  year={2024}
+@inproceedings{cai2024medusa,
+  title         = {{Medusa}: Simple {LLM} Inference Acceleration Framework with
+                   Multiple Decoding Heads},
+  author        = {Cai, Tianle and Li, Yuhong and Geng, Zhengyang and Peng, Hongwu
+                   and Lee, Jason D. and Chen, Deming and Dao, Tri},
+  booktitle     = {Proceedings of the 41st International Conference on Machine
+                   Learning},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2401.10774},
+  eprint        = {2401.10774},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.10774}
 }
 
-@article{premack1978does,
-  title={Does the Chimpanzee Have a Theory of Mind?},
-  author={Premack, David and Woodruff, Guy},
-  journal={Behavioral and Brain Sciences},
-  volume={1},
-  number={4},
-  pages={515--526},
-  year={1978}
+@inproceedings{li2024eagle,
+  title         = {{EAGLE}: Speculative Sampling Requires Rethinking Feature
+                   Uncertainty},
+  author        = {Li, Yuhui and Wei, Fangyun and Zhang, Chao and Zhang, Hongyang},
+  booktitle     = {Proceedings of the 41st International Conference on Machine
+                   Learning},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2401.15077},
+  eprint        = {2401.15077},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.15077}
 }
 
-@article{geirhos2020shortcut,
-  title={Shortcut Learning in Deep Neural Networks},
-  author={Geirhos, Robert and Jacobsen, J{\"o}rn-Henrik and Michaelis, Claudio and Zemel, Richard and Brendel, Wieland and Bethge, Matthias and Wichmann, Felix A.},
-  journal={Nature Machine Intelligence},
-  volume={2},
-  number={11},
-  pages={665--673},
-  year={2020}
+@misc{cao2025specmoeoff,
+      title={Training Domain Draft Models for Speculative Decoding: Best Practices and Insights}, 
+      author={Fenglu Hong and Ravi Raju and Jonathan Lingjie Li and Bo Li and Urmish Thakker and Avinash Ravichandran and Swayambhoo Jain and Changran Hu},
+      year={2025},
+      eprint={2503.07807},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.07807}, 
 }
 
-@inproceedings{mccoy2019right,
-  title={Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference},
-  author={McCoy, Tom and Pavlick, Ellie and Linzen, Tal},
-  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)},
-  pages={3428--3448},
-  year={2019}
+@misc{xue2025moespeq,
+  title         = {{MoE-SpeQ}: Speculative Quantized Decoding with Proactive
+                   Expert Prefetching and Offloading for Mixture-of-Experts},
+  author        = {Wang, Wenfeng and Liu, Jiacheng and Hou, Xiaofeng and
+                   Xia, Xinfeng and Tang, Peng and Zhang, Mingxuan and
+                   Li, Chao and Guo, Minyi},
+  journal       = {arXiv.org},
+  year          = {2025},
+  doi           = {10.48550/arXiv.2511.14102},
+  eprint        = {2511.14102},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2511.14102}
 }
 
-@inproceedings{niven2019probing,
-  title={Probing Neural Network Comprehension of Natural Language Arguments},
-  author={Niven, Timothy and Kao, Hung-Yu},
-  booktitle={Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (ACL)},
-  pages={4658--4664},
-  year={2019}
+
+% ─────────────────────────────────────────────
+% 3. MoE INFERENCE: ROUTING PREDICTION & OVERLAP
+% ─────────────────────────────────────────────
+
+@inproceedings{hwang2024pregated,
+  title         = {{Pre-Gated MoE}: An Algorithm-System Co-Design for Fast and
+                   Scalable Mixture-of-Expert Inference},
+  author        = {Hwang, Ranggi and Wei, Jianyu and Cao, Shijie and Hwang,
+                   Changho and Tang, Xiaohu and Cao, Ting and Yang, Mao},
+  booktitle     = {Proceedings of the 51st Annual International Symposium on
+                   Computer Architecture (ISCA)},
+  pages         = {1018--1031},
+  year          = {2024},
+  publisher     = {IEEE},
+  doi           = {10.1109/ISCA59077.2024.00078},
+  eprint        = {2308.12066},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2308.12066}
 }
 
-@inproceedings{shapira2024clever,
-  title={Clever Hans or Neural Theory of Mind? Stress Testing Social Reasoning in Large Language Models},
-  author={Shapira, Natalie and Levy, Mosh and Alavi, Seyed Hossein and Zhou, Xuhui and Choi, Yejin and Goldberg, Yoav and Sap, Maarten and Shwartz, Vered},
-  booktitle={Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (EACL)},
-  pages={2257--2273},
-  year={2024}
+@article{eliseev2023fast,
+  title         = {Fast Inference of Mixture-of-Experts Language Models with
+                   Offloading},
+  author        = {Eliseev, Artyom and Mazur, Denis},
+  journal       = {arXiv preprint arXiv:2312.17238},
+  year          = {2023},
+  doi           = {10.48550/arXiv.2312.17238},
+  eprint        = {2312.17238},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2312.17238}
 }
 
-@article{ullman2023large,
-  title={Large Language Models Fail on Trivial Alterations to Theory-of-Mind Tasks},
-  author={Ullman, Tomer},
-  journal={arXiv preprint arXiv:2302.08399},
-  year={2023}
+@misc{song2024promoe,
+  title         = {ProMoE: Fast MoE-based LLM Serving using Proactive Caching},
+  author        = {Song, Xiaoniu and Zhong, Zihang and Chen, Rong and Chen, Haibo},
+  journal       = {arXiv.org},
+  year          = {2025},
+  doi           = {10.48550/arXiv.2410.22134},
+  eprint        = {2410.22134},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.DC},
+  url           = {https://arxiv.org/abs/2410.22134}
 }
 
-@inproceedings{sap2022neural,
-  title={Neural Theory-of-Mind? On the Limits of Social Intelligence in Large LMs},
-  author={Sap, Maarten and Le Bras, Ronan and Fried, Daniel and Choi, Yejin},
-  booktitle={Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  pages={3762--3780},
-  year={2022}
+@inproceedings{rajbhandari2022deepspeedmoe,
+  title         = {{DeepSpeed-MoE}: Advancing Mixture-of-Experts Inference and
+                   Training to Power Next-Generation {AI} Scale},
+  author        = {Rajbhandari, Samyam and Li, Conglong and Yao, Zhewei and
+                   Zhang, Minjia and Aminabadi, Reza Yazdani and
+                   Awan, Ammar Ahmad and Rasley, Jeff and He, Yuxiong},
+  booktitle     = {Proceedings of the 39th International Conference on Machine
+                   Learning},
+  pages         = {18332--18346},
+  year          = {2022},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {162},
+  publisher     = {PMLR},
+  eprint        = {2201.05596},
+  archivePrefix = {arXiv},
+  url           = {https://proceedings.mlr.press/v162/rajbhandari22a.html}
 }
 
-@article{strachan2024testing,
-  title={Testing Theory of Mind in Large Language Models and Humans},
-  author={Strachan, James W. A. and Albergo, Dalila and Borghini, Giulia and Pansardi, Oriana and Scaliti, Eugenio and Gupta, Saurabh and Saxena, Krati and Rufo, Alessandro and Panzeri, Stefano and Manzi, Guido and others},
-  journal={Nature Human Behaviour},
-  volume={8},
-  number={7},
-  pages={1285--1295},
-  year={2024}
+@inproceedings{hwang2023tutel,
+  title         = {{Tutel}: Adaptive Mixture-of-Experts at Scale},
+  author        = {Hwang, Changho and Cui, Wei and Xiong, Yifan and Yang, Ziyue
+                   and Liu, Ze and Hu, Han and Wang, Zilong and Salas, Rafael
+                   and Jose, Jithin and Ram, Prabhat and Chau, Joe and Cheng, Peng
+                   and Yang, Fan and Yang, Mao and Xiong, Yongqiang},
+  booktitle     = {Proceedings of Machine Learning and Systems (MLSys)},
+  year          = {2023},
+  doi           = {10.48550/arXiv.2206.03382},
+  eprint        = {2206.03382},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2206.03382}
 }
 
-@inproceedings{wu2023hitom,
-  title={HI-TOM: A Benchmark for Evaluating Higher-Order Theory of Mind Reasoning in Large Language Models},
-  author={He, Yinghui and Wu, Yufan and Jia, Yilin and Mihalcea, Rada and Chen, Yulong and Deng, Naihao},
-  booktitle={Findings of the Association for Computational Linguistics: EMNLP 2023},
-  year={2023}
+@inproceedings{shen2025comet,
+  title         = {{Comet}: Fine-grained Computation--Communication Overlapping
+                   for Mixture-of-Experts},
+  author        = {Zhang, Shulai and Zheng, Ningxin and Lin, Haibin and Jiang, Ziheng
+                   and Bao, Wenlei and Jiang, Chengquan and Hou, Qi and Cui, Weihao
+                   and Zheng, Size and Liu, Liang-Yu and Yang, Xin and Liu, Xin
+                   and Zhu, Yibo and Liu, Xuanzhe and Jin, Xin},
+  booktitle     = {Proceedings of Machine Learning and Systems (MLSys)},
+  year          = {2025},
+  doi           = {10.48550/arXiv.2502.19811},
+  eprint        = {2502.19811},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2502.19811}
 }
 
-@article{street2024llms,
-  title={LLMs Achieve Adult Human Performance on Higher-Order Theory of Mind Tasks},
-  author={Street, Winnie and Siy, John Oliver and Keeling, Geoff and Baranes, Adrien and Barnett, Benjamin and McKibben, Michael and Kanyere, Tatenda and Lentz, Alison and Arcas, Blaise Ag{\"u}era y and Dunbar, Robin I. M.},
-  journal={arXiv preprint arXiv:2405.18870},
-  year={2024}
+@inproceedings{jiang2024lancet,
+  title         = {Lancet: Accelerating Mixture-of-Experts Training via Whole
+                   Graph Computation-Communication Overlapping},
+  author        = {Jiang, Chenyu and Tian, Ye and Jia, Zhen and Zheng, Shuai
+                   and Yu, Chuan and Wang, Yida},
+  booktitle     = {Proceedings of Machine Learning and Systems (MLSys)},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2404.19429},
+  eprint        = {2404.19429},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2404.19429}
 }
 
-@inproceedings{shinn2023reflexion,
-  title={Reflexion: Language Agents with Verbal Reinforcement Learning},
-  author={Shinn, Noah and Cassano, Federico and Berman, Edward and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
-  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-  year={2023}
+@article{xue2024moeinfinity,
+  title         = {{MoE-Infinity}: Efficient {MoE} Inference on Personal Machines
+                   with Sparsity-Aware Expert Cache},
+  author        = {Xue, Leyang and Fu, Yao and Lu, Zhan and Mai, Luo and
+                   Marina, Mahesh K.},
+  journal       = {arXiv preprint arXiv:2401.14361},
+  year          = {2024},
+  eprint        = {2401.14361},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2401.14361}
 }
 
-@article{openai2024gpt4,
-  title={{GPT-4} Technical Report},
-  author={OpenAI},
-  journal={arXiv preprint arXiv:2303.08774},
-  year={2024}
+@inproceedings{zhong2024adapmoe,
+  title         = {{AdapMoE}: Adaptive Sensitivity-Based Expert Gating and
+                   Management for Efficient {MoE} Inference},
+  author        = {Zhong, Shuzhang and Liang, Ling and Wang, Yuan and
+                   Wang, Runsheng and Huang, Ru and Li, Meng},
+  booktitle     = {Proceedings of the 43rd IEEE/ACM International Conference on
+                   Computer-Aided Design (ICCAD)},
+  year          = {2024},
+  doi           = {10.1145/3676536.3676741},
+  eprint        = {2408.10284},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2408.10284}
 }
 
-@article{deepseekai2024deepseekv3,
-  title={{DeepSeek-V3} Technical Report},
-  author={{DeepSeek-AI}},
-  journal={arXiv preprint arXiv:2412.19437},
-  year={2024}
+@article{shen2024expertflow,
+  title         = {{ExpertFlow}: Optimized Expert Activation and Token Allocation
+                   for Efficient Mixture-of-Experts Inference},
+  author        = {Shen, Xin and others},
+  journal       = {arXiv preprint arXiv:2410.17954},
+  year          = {2024},
+  doi           = {10.1145/3770743.3804292},
+  eprint        = {2410.17954},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2410.17954}
 }
 
-@article{grattafiori2024llama3,
-  title={The Llama 3 Herd of Models},
-  author={Grattafiori, Aaron and others},
-  journal={arXiv preprint arXiv:2407.21783},
-  year={2024}
+@misc{zhu2025preattn,
+  title         = {Pre-Attention Expert Prediction and Prefetching for
+                   Mixture-of-Experts Large Language Models},
+  author        = {Zhu, Shien and Bohl, Samuel and Oester, Robin and Alonso, Gustavo},
+  journal       = {arXiv.org},
+  year          = {2025},
+  doi           = {10.48550/arXiv.2511.10676},
+  eprint        = {2511.10676},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2511.10676}
+}
+
+
+% ─────────────────────────────────────────────
+% 4. MoE TRAINING EFFICIENCY
+% ─────────────────────────────────────────────
+
+@article{liu2023sparsemixer,
+  title         = {Sparse Backpropagation for {MoE} Training},
+  author        = {Liu, Liyuan and Gao, Jianfeng and Chen, Weizhu},
+  journal       = {arXiv preprint arXiv:2310.00811},
+  year          = {2023},
+  doi           = {10.48550/arXiv.2310.00811},
+  eprint        = {2310.00811},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2310.00811}
+}
+
+@article{liao2023memory,
+  title         = {Memory Efficient Mixed Precision Optimizers},
+  author        = {Liao, Zheyang and Müller, Florian and Blankenship, Zachary
+                   and Rätsch, Gunnar and Locatello, Francesco},
+  journal       = {arXiv preprint arXiv:2309.12381},
+  year          = {2023},
+  doi           = {10.48550/arXiv.2309.12381},
+  eprint        = {2309.12381},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2309.12381}
+}
+
+@article{moeblaze2025,
+  title         = {{MoEBlaze}: Breaking the Memory Wall for Efficient {MoE}
+                   Training on Modern {GPUs}},
+  author        = {Dong, Yichen and Li, Mingxin and Wang, Jintao and others},
+  journal       = {arXiv preprint arXiv:2601.05296},
+  year          = {2026},
+  doi           = {10.48550/arXiv.2601.05296},
+  eprint        = {2601.05296},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2601.05296}
+}
+
+@misc{guo2025sonicmoe,
+  title         = {SonicMoE: Accelerating MoE with IO and Tile-aware Optimizations},
+  author        = {Guo, Wentao and Mishra, Mayank and Cheng, Xinle and
+                   Stoica, Ion and Dao, Tri},
+  journal       = {arXiv.org},
+  year          = {2025},
+  doi           = {10.48550/arXiv.2512.14080},
+  eprint        = {2512.14080},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2512.14080}
+}
+
+@article{tan2024scattermoe,
+  title         = {{ScatterMoE}: Scattered Mixture-of-Experts Implementation},
+  author        = {Tan, Shawn and Shen, Yikang and Panda, Rameswar and
+                   Courville, Aaron},
+  journal       = {arXiv preprint arXiv:2403.08245},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2403.08245},
+  eprint        = {2403.08245},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2403.08245}
+}
+
+@inproceedings{gale2023megablocks,
+  title         = {{MegaBlocks}: Efficient Sparse Training with
+                   Mixture-of-Experts},
+  author        = {Gale, Trevor and Narayanan, Deepak and Young, Cliff and
+                   Zaharia, Matei},
+  booktitle     = {Proceedings of Machine Learning and Systems (MLSys)},
+  year          = {2023},
+  doi           = {10.48550/arXiv.2211.15841},
+  eprint        = {2211.15841},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2211.15841}
+}
+
+@inproceedings{wang2025lossfree,
+  title         = {Auxiliary-Loss-Free Load Balancing Strategy for
+                   Mixture-of-Experts},
+  author        = {Wang, Lean and Gao, Huazuo and Zhao, Chenggang and Sun, Xu
+                   and Dai, Damai},
+  booktitle     = {The Thirteenth International Conference on Learning
+                   Representations, {ICLR} 2025},
+  year          = {2025},
+  doi           = {10.48550/arXiv.2408.15664},
+  eprint        = {2408.15664},
+  archivePrefix = {arXiv},
+  url           = {https://openreview.net/forum?id=y1iU5czYpE}
+}
+
+@inproceedings{lo2024closer,
+  title         = {A Closer Look into Mixture-of-Experts in Large Language Models},
+  author        = {Lo, Ka Man and Huang, Zeyu and Qiu, Zihan and Wang, Zili
+                   and Fu, Jie},
+  booktitle     = {Findings of the Association for Computational Linguistics:
+                   NAACL 2025},
+  year          = {2024},
+  doi           = {10.48550/arXiv.2406.18219},
+  eprint        = {2406.18219},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2406.18219}
+}
+
+@inproceedings{zhou2022expertchoice,
+  title         = {Mixture-of-Experts with Expert Choice Routing},
+  author        = {Zhou, Yanqi and Lei, Tao and Liu, Hanxiao and Du, Nan and
+                   Huang, Yanping and Zhao, Vincent Y. and Dai, Andrew M. and
+                   Chen, Zhifeng and Le, Quoc V. and Laudon, James},
+  booktitle     = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume        = {35},
+  year          = {2022},
+  doi           = {10.52202/068431-0515},
+  eprint        = {2202.09368},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2202.09368}
+}
+
+@inproceedings{rajbhandari2020zero,
+  title         = {{ZeRO}: Memory Optimizations Toward Training Trillion Parameter
+                   Models},
+  author        = {Rajbhandari, Samyam and Rasley, Jeff and Ruwase, Olatunji and
+                   He, Yuxiong},
+  booktitle     = {Proceedings of the International Conference for High
+                   Performance Computing, Networking, Storage and Analysis
+                   ({SC} '20)},
+  publisher     = {{IEEE} Press},
+  year          = {2020},
+  doi           = {10.1109/SC41405.2020.00024},
+  eprint        = {1910.02054},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1910.02054}
+}
+
+@article{chen2016sublinear,
+  title         = {Training Deep Nets with Sublinear Memory Cost},
+  author        = {Chen, Tianqi and Xu, Bing and Zhang, Chiyuan and
+                   Guestrin, Carlos},
+  journal       = {arXiv preprint arXiv:1604.06174},
+  year          = {2016},
+  eprint        = {1604.06174},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/1604.06174}
 }
